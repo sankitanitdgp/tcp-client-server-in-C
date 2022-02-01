@@ -25,7 +25,7 @@ void main(){
 
 	serverAddr.sin_family = AF_INET;
 	serverAddr.sin_port = htons(PORT);
-	serverAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+	serverAddr.sin_addr.s_addr = inet_addr("192.168.56.102");
 
 	bind(sockfd, (struct sockaddr*)&serverAddr, sizeof(serverAddr));
 	printf("[+]Bind to Port number %d.\n", 4455);
