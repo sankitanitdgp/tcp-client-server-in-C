@@ -23,7 +23,7 @@ int main()
    }
    serv_addr.sin_family = AF_INET;
    serv_addr.sin_addr.s_addr = INADDR_ANY;
-   serv_addr.sin_port = htons(6000);
+   serv_addr.sin_port = htons(50029);
    bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr));
    listen(sockfd, 5);
    while(1)
