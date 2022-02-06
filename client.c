@@ -1,3 +1,5 @@
+# Name: Sankita Mandal , Roll No.: 19CS8029
+
 #include<stdio.h>
 #include<sys/types.h>
 #include<sys/socket.h>
@@ -19,7 +21,7 @@ int main()
    }
    serv_addr.sin_family = AF_INET;
    serv_addr.sin_addr.s_addr =  INADDR_ANY;
-   serv_addr.sin_port = htons(6000);
+   serv_addr.sin_port = htons(50029);
    connect(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr));
    printf("Enter the expression: ");
    gets(buf);
